@@ -98,6 +98,51 @@ PERMSET:
       - registries_integrations.write   
       - scan.read
       - gateways.read
+  test-perm-set-2:
+    description: Test Permissions Sets created by Terraform
+    ui_access: true #  Set False for API access only. API access is by default.
+    actions:
+      - image_profiles.read
+      - image_profiles.write            
+      - network_policies.read
+      - network_policies.write          
+      - runtime_policies.read
+      - runtime_policies.write
+      - response_policies.read          
+      - response_policies.write         
+      - image_assurance.read
+      - image_assurance.write
+      - dashboard.read
+      - dashboard.write                 
+      - risk_explorer.read
+      - images.read
+      - images.write                    
+      - risks.host_images.read
+      - risks.host_images.write         
+      - functions.read
+      - functions.write                 
+      - enforcers.read
+      - enforcers.write                 
+      - containers.read
+      - services.read
+      - services.write                  
+      - infrastructure.read
+      - infrastructure.write            
+      - risks.vulnerabilities.read
+      - risks.vulnerabilities.write
+      - risks.benchmark.read
+      - risks.benchmark.write           
+      - audits.read
+      - secrets.read
+      - secrets.write                   
+      - settings.read
+      - settings.write                  
+      - integrations.read
+      - integrations.write              
+      - registries_integrations.read
+      - registries_integrations.write   
+      - scan.read
+      - gateways.read
 ROLES:
   test-role-1:
     description: Test Role created by Terraform

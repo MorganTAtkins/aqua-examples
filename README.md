@@ -1,6 +1,9 @@
-# aqua-examples
+# Aqua Terraform
 
+CLI:
+```
 terraform apply -var aqua_password='******' -var aqua_username='AQUA Console Email'
+```
 
 ## Create a role
 
