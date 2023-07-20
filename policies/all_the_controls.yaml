@@ -1,0 +1,239 @@
+---
+# Required
+application_scopes:
+  - test-scope-1
+  - test-scope-2
+# Optional
+only_none_root_users: true
+
+fail_cicd: true
+audit_on_failure: true
+dta_enabled: true
+dta_severity: "high"
+
+
+labels:
+  - "label_1"
+  - "label_2"
+
+forbidden_labels_enabled: true
+forbidden_labels: [
+  {
+      key: "label1",
+      value: "forbidden1"
+  },
+  {
+      key: "label2",
+      value: "forbidden2"
+  }
+]
+
+# allowed_images: [ "test1", "test2" ]
+# auto_scan_configured: true
+auto_scan_enabled: true
+
+# auto_scan_time: [
+#   {
+#     iteration: "2",
+#     iteration_type: "foo",
+#     time: "0000",
+#     week_days: [ "mon","tue" ]
+#   }
+# ]
+
+#  scope: [
+#   {
+#     expression: "expression",
+#     attribute: "attribute",
+#     name: "name",
+#     value: "value"
+#   }
+# ]
+
+blacklisted_licenses_enabled: true
+blacklist_permissions_enabled: true
+blacklist_permissions: 
+  - "naughty ones"
+  - "more naughty ones"
+blacklisted_licenses:
+  - "license_1"
+  - "license_2"
+
+
+block_failed: true
+
+control_exclude_no_fix: true
+custom_severity_enabled: true
+
+custom_checks_enabled: false
+custom_checks: [
+  {
+    author: "",
+    description: "",
+    engine: "",
+    last_modified: 1,
+    name: "",
+    path: "",
+    read_only: true,
+    script_id: "",
+    severity: "",
+    snippet: ""
+  }]
+
+cves_white_list_enabled: true
+cvss_severity: high
+cvss_severity_enabled: true
+cvss_severity_exclude_no_fix: true
+cves_black_list_enabled: true
+cves_black_list:
+  - "cve_1"
+  - "cve_2"
+cves_white_list:
+  - "cve_1"
+  - "cve_2"
+
+kube_cis_enabled: true
+disallow_malware: true
+docker_cis_enabled: true
+domain: "aqua_image"
+domain_name: "aqua"
+
+enforce_after_days: 0
+
+enforce_excessive_permissions: true
+
+exceptional_monitored_malware_paths:
+  - "path_1"
+  - "path_2"
+
+
+force_microenforcer: true
+
+
+ignore_recently_published_vln: true
+ignore_risk_resources_enabled: true
+ignored_risk_resources:
+  - "ignore_1"
+  - "ignore_2"
+
+images:
+  - "image_1"
+  - "image_2"
+
+
+
+malware_action: "delete"
+
+maximum_score: 100
+maximum_score_enabled: true
+maximum_score_exclude_no_fix: true
+
+monitored_malware_paths:
+  - "path_1"
+  - "path_2"
+
+packages_black_list_enabled: true
+packages_black_list: [
+  {
+    arch: "",
+    display: "",
+    epoch: "",
+    format: "",
+    license: "",
+    name: "",
+    release: "",
+    version: "",
+    version_range: ""
+
+  },
+  {
+    arch: "",
+    display: "",
+    epoch: "",
+    format: "",
+    license: "",
+    name: "",
+    release: "",
+    version: "",
+    version_range: ""
+
+  }
+
+]
+
+packages_white_list_enabled: true
+packages_white_list: [
+  {
+    arch: "",
+    display: "",
+    epoch: "",
+    format: "",
+    license: "",
+    name: "",
+    release: "",
+    version: "",
+    version_range: ""
+  },
+  {
+    arch: "",
+    display: "",
+    epoch: "",
+    format: "",
+    license: "",
+    name: "",
+    release: "",
+    version: "",
+    version_range: ""
+  }
+]
+
+
+partial_results_image_fail: true
+
+registries: 
+  - "registry_1"
+  - "registry_2"
+
+registry: "registry"
+
+required_labels: [
+  {
+    key: "label",
+    value: "required"
+  },
+  {
+    key: "label2",
+    value: "required",
+  }
+]
+required_labels_enabled: true
+
+scan_nfs_mounts: true
+scan_sensitive_data: true
+
+scap_enabled: true
+# scap_files:
+#   - "scap_1"
+#   - "scap_2"
+
+# scope: [
+#   {
+#     expression: "expression",
+#     attribute: "attribute",
+#     name: "name",
+#     value: "value"
+#   }
+# ]
+
+trusted_base_images_enabled: true
+trusted_base_images: [
+  {
+  imagename: "alpine:latest",
+  registry: "Docker Hub"
+  }
+]
+
+whitelisted_licenses_enabled: true
+whitelisted_licenses:
+  - "license_1"
+  - "license_2"

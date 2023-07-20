@@ -89,3 +89,11 @@ resource "aquasec_application_scope" "scopes" {
     }
   }
 }
+
+module "policies" {
+  source   = "./modules/policies"
+
+  for_each = fileset("${path.root}/policies/","*.yaml")
+  name     = each.key
+  controls = yamldecode(file("${path.root}/policies/${each.value}"))
+}

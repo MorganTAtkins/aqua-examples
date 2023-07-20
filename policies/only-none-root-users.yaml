@@ -1,0 +1,6 @@
+---
+application_scopes:
+  - Global
+
+only_none_root_users: true
+
