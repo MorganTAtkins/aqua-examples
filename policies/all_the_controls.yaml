@@ -1,14 +1,16 @@
 ---
+name: foo_bar
 # Required
 application_scopes:
-  - test-scope-1
-  - test-scope-2
+  - Global
 # Optional
-only_none_root_users: true
+only_none_root_users: false
+
+enabled: false
 
 fail_cicd: true
 audit_on_failure: true
-dta_enabled: true
+dta_enabled: false
 dta_severity: "high"
 
 

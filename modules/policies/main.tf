@@ -1,6 +1,6 @@
 
 resource "aquasec_image_assurance_policy" "image_assurance_runtime_policy" {
-  name                                = trimsuffix(var.name, ".yaml")
+  name                                = var.controls.name
   application_scopes                  = var.controls.application_scopes
   allowed_images                      = try(var.controls.allowed_images  , null)
   audit_on_failure                    = try(var.controls.audit_on_failure , null)

@@ -1,4 +1,5 @@
 ---
+name: bar_foo
 application_scopes:
   - Global
 
