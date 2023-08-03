@@ -1,15 +1,4 @@
 
-# locals {
-#   artifacts       = try(var.scope.categories["artifacts"], {})
-#   infrastructure  = try(var.scope.categories["infrastructure"], {})
-#   workloads       = try(var.scope.categories["workloads"], {})
-#   entity_scope    = try(var.scope.categories["entity_scope"], {})
-  
-
-# }
-
-
-
 resource "aquasec_application_scope" "scopes" {
     name        = var.scope.name
     description = var.scope.description

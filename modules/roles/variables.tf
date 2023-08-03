@@ -1,6 +1,4 @@
 variable "name" {
   type = string
 }
-variable "role" {
-  
-}
+variable "role" {}
