@@ -1,6 +1,6 @@
 
 ---
-name: test-perm-set-2
+name: test-perm-set-3
 description: Test Permissions Sets created by Terraform
 ui_access: true #  Set False for API access only. API access is by default.
 actions:
@@ -24,7 +24,6 @@ actions:
   - functions.read
   - functions.write
   - enforcers.read
-  - enforcers.write
   - containers.read
   - services.read
   - services.write

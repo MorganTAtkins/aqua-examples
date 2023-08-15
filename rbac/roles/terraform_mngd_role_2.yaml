@@ -1,0 +1,7 @@
+---
+role_name: example-role-2
+description: Test Role created by Terraform
+scopes:
+  - scope-name-2
+permissions: test-perm-set-2
+
