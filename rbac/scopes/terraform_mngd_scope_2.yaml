@@ -1,28 +1,28 @@
 ---
 name: scope-name-2
 description:  Test SCOPE created by Terraform
-categories:
-  - artifacts: 
-    - image:
-      - expression: "v1 && v2"
-        variables:
-        - attribute: aqua.registry
-          value: test-registry
-        - attribute: image.repo
-          value: nginx
-  - workloads:
-    - kubernetes:
-      - expression: "v1 && v2"
-        variables:
-        - attribute: kubernetes.cluster
-          value: other
-        - attribute: kubernetes.namespace
-          value: namespace-2
-  - infrastructure:
-    - kubernetes:
-      - expression: "v1"
-        variables:
-        - attribute: kubernetes.cluster
-          value: other-cluster
+
+artifacts:
+  image:
+    expression: "v1 && v2"
+    variables:
+      - attribute: aqua.registry
+        value: test-registry2
+      - attribute: image.repo
+        value: nginx2
+workloads:
+  kubernetes:
+    expression: "v1 && v2"
+    variables:
+      - attribute: kubernetes.cluster
+        value: other2
+      - attribute: kubernetes.namespace
+        value: namespace-2
+infrastructure:
+  kubernetes:
+    expression: "v1"
+    variables:
+      - attribute: kubernetes.cluster
+        value: other-cluster2
 
 
